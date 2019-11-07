@@ -24,6 +24,11 @@
 #import <libwebp/encode.h>
 #import <libwebp/demux.h>
 #import <libwebp/mux.h>
+#elif __has_include(<WebP/decode.h>) && __has_include(<WebP/encode.h>) && __has_include(<WebPDemux/demux.h>) && __has_include(<WebPMux/mux.h>)
+#import <WebP/decode.h>
+#import <WebP/encode.h>
+#import <WebPMux/mux.h>
+#import <WebPDemux/demux.h>
 #endif
 
 #import <Accelerate/Accelerate.h>
